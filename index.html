@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+<main>
+    <h1>Goal List</h1>
+
+    <!-- Short Term Goals Section -->
+    <section>
+        <h2>Short Term Goals</h2>
+
+        <!-- Day Goals -->
+        <div class="short-term day-goals">
+            <h3>Day</h3>
+            <div class="input-box">
+            <input type="text" class="input" id="day-goal-input" placeholder="Add a day goal">
+            <button   class="goal-btn" id="add-day-goal">Add</button>
+            </div>
+            <ul id="day-goals">
+                <!-- Day goals will be listed here -->
+            </ul>
+        </div>
+
+        <!-- Week Goals -->
+        <div class="short-term week-goals">
+            <h3>Week</h3>
+
+            <div class="input-box">
+            <input type="text" class="input" id="week-goal-input" placeholder="Add a week goal">
+            <button   class="goal-btn" id="add-week-goal">Add</button>
+            </div>
+            <ul id="week-goals">
+                <!-- Week goals will be listed here -->
+            </ul>
+        </div>
+
+        <!-- Month Goals -->
+        <div class="short-term month-goals">
+            <h3>Month</h3>
+                <div class="input-box">
+            <input type="text" class="input" id="month-goal-input" placeholder="Add a month goal">
+            <button  class="goal-btn"  id="add-month-goal">Add</button>
+                </div>
+            <ul id="month-goals">
+                <!-- Month goals will be listed here -->
+            </ul>
+        </div>
+    
+
+    <!-- Long Term Goals Section -->
+    <div class="long-term-goals">
+        <h2>Long Term Goals</h2>
+        <div class="long-term">
+            <div class="input-box">
+            <input type="text" class="input" id="long-term-input" placeholder="Add a long term goal">
+            <button  class="goal-btn"  id="add-long-term">Add</button>
+        </div>
+        <ul id="long-term-goals">
+            <!-- Long term goals will be listed here -->
+        </ul>
+        </div>
+    </section>
+</main>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+:root {
+    --background: white;
+    --primary: #0a303f;
+    --button: #d00000;
+    --textSecondary: rgb(75, 73, 73);
+    --accent: #0082be;
+  
+    --fs-300: clamp(0.875rem, 0.55rem + 1vw, 1.125rem);
+    --fs-350: clamp(1rem, 0.75rem + 1vw, 1.25rem);
+    --fs-400: clamp(1rem, 1rem + 1.5vw, 1.5rem);
+    --fs-450: clamp(1rem, 1rem + 1.65vw, 1.5rem);
+    --fs-500: clamp(1rem, 1rem + 2vw, 2rem);
+    --fs-600: clamp(1.125rem, 1rem + 3vw, 2.5rem);
+    --fs-700: clamp(1.25rem, 1rem + 5vw, 3.5rem);
+    --fs-xl: clamp(2.5rem, 1rem + 15vw, 6rem);
+    --fw-light: 300;
+    --fw-med: 400;
+    --fw-semibld: 500;
+    --fw-bld: 700;
+    --padding-400: 12px;
+    --padding-600: 32px;
+    --padding-700: 48px;
+    --margin-400: 16px;
+    --margin-600: 32px;
+    --margin-700: 48px;
+    --margin-800: 80px;
+    --margin-xl: clamp(6rem, 1rem + 25vw, 12rem);
+    --gap-400: 16px;
+    --gap-600: 32px;
+    --gap-700: 48px;
+    --gap-800: 64px;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  
+    cursor: pointer;
+    object-fit: cover;
+  }
+  
+  html {
+    font-family: "Cardo", sans-serif;
+    scroll-behavior: smooth;
+  }
+  body {
+    color: var(--text);
+    line-height: 1.6;
+    font-size: var(--fs-400);
+    min-height: 150vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #ff4e50, #fc913a, #f94d6a);
+   
+   
+  }
+  h1{
+    margin-bottom: 16px;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-inline: auto;
+   
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.28);
+   
+    background-color: white;
+  }
+  .input-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-block: 16px;
+    }
+
+
+  .input{
+  min-width: 300px;
+  height: 50px;
+  outline: 2px solid var(--accent);
+  border-radius: 4px;
+  border: none;
+  padding-inline: 4px;
+    flex-grow: 1;
+  }  
+  .goal-btn{
+    background-color: var(--accent);
+    padding-inline: 50px;
+    border: none;
+    color: white;
+    cursor: pointer;  
+    border-radius: 4px;
+    align-self: stretch;
+
+  }
+
+  .remove-btn{
+    justify-self: end;
+    padding: 12px 16px;
+    border: none;
+    background-color: var(--primary);
+    border-radius: 4px;
+
+  }
+
+  .remove-btn i {
+      cursor: pointer;
+      scale: 1.5;
+      color: white;
+  }
+
+  .month-goals{
+    display: grid;
+  }
+
+
+  li{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;  
+    align-items: center;
+    background-color: aliceblue;
+    margin-block: 1rem;
+    border-radius: 4px;
+  }
+
+  .check-box{
+    height: 5px;
+    width: 5px;
+    
+  }
+
+  .completed{
+    text-decoration: line-through;
+    color: lightgray;
+  }
+
