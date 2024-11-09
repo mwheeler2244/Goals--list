@@ -10,3 +10,8 @@ A simple web application that allows users to track their short-term and long-te
 - Mark goals as complete with a checkbox
 - Remove goals using a trash can icon
 - Clear and intuitive user interface
+
+### Live Demo
+
+View the project live on GitHub Pages:  
+**[Goals List](https://mwheeler2244.github.io/Goals--list/)**
